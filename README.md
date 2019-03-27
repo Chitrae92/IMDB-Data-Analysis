@@ -1,6 +1,6 @@
-## IMDB Data Analysis using MapReduce and Hive queries
+## IMDB Data Analysis using MapReduce, Apache Spark and Hive queries
 Implemented code/queries to rank the movies based on popularity (number of reviews) and find the movies that are having an average rating > 4 stars and number of reviews > 10. 
-A comparative study between Mapreduce and Hive was done based on the number of jobs and the time taken for the various datasets provided.
+A comparative study Mapreduce vs Hive, MapReduce vs Spark was done based on the number of jobs and the time taken for the various datasets provided.
 
 ### Input dataset (Small dataset - 100k rows vs Large dataset - 26M rows)
 - reviews.csv
