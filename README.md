@@ -45,7 +45,9 @@ For inserting data into the movies table from the csv file we made use of CSV Se
 - Loading data to reviews table 
 
 > load data local inpath "/HADOOP/hdfs/user/bigdata11/dataset/reviews/reviews.csv" overwrite into table imdb_bigdata11.reviews_large; 
- 
+
+After table creation, the hive queries are run using the command and the output is stored in the text file mentioned in the command
+> hive -f query1.hql > output_query1.txt
 
 ### Mapreduce
 For Mapreduce program, Mapside join has been used to join the content of Movies and Reviews files based on movieid. Mapside join is effective when one of the two files can fit entirely in the memory. DistributedCache method is used to add the smaller file (movies.csv) to the cache of the node where the mapper is being executed.
