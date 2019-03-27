@@ -46,7 +46,7 @@ For inserting data into the movies table from the csv file we made use of CSV Se
 
 > load data local inpath "/HADOOP/hdfs/user/bigdata11/dataset/reviews/reviews.csv" overwrite into table imdb_bigdata11.reviews_large; 
 
-After table creation, the hive queries are run using the command and the output is stored in the text file mentioned in the command
+After table creation, the hive queries are run and the output is stored in a text file using the following command
 > hive -f query1.hql > output_query1.txt
 
 ### Mapreduce
